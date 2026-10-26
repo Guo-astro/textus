@@ -571,7 +571,7 @@
         }
       },
       "gemini-2.5-flash-image": {
-        "reasoning": true
+        "reasoning": false
       },
       "gemini-2.5-flash-lite": {
         "reasoning": {
@@ -762,6 +762,15 @@
           ]
         }
       },
+      "gemini-pro-latest": {
+        "reasoning": {
+          "effort": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      },
       "gemma-4-26b-a4b-it": {
         "reasoning": {
           "toggle": true
@@ -896,16 +905,7 @@
       "devstral-latest": {
         "reasoning": false
       },
-      "devstral-medium-2507": {
-        "reasoning": false
-      },
       "devstral-medium-latest": {
-        "reasoning": false
-      },
-      "devstral-small-2505": {
-        "reasoning": false
-      },
-      "devstral-small-2507": {
         "reasoning": false
       },
       "glm-5-2": {
@@ -954,9 +954,6 @@
       "mistral-embed": {
         "reasoning": false
       },
-      "mistral-large-2411": {
-        "reasoning": false
-      },
       "mistral-large-2512": {
         "reasoning": false
       },
@@ -993,9 +990,6 @@
           ]
         }
       },
-      "mistral-nemo": {
-        "reasoning": false
-      },
       "mistral-small-2506": {
         "reasoning": false
       },
@@ -1015,22 +1009,10 @@
           ]
         }
       },
-      "open-mistral-7b": {
-        "reasoning": false
-      },
       "open-mistral-nemo": {
         "reasoning": false
       },
-      "open-mixtral-8x22b": {
-        "reasoning": false
-      },
-      "open-mixtral-8x7b": {
-        "reasoning": false
-      },
       "pixtral-12b": {
-        "reasoning": false
-      },
-      "pixtral-large-latest": {
         "reasoning": false
       },
       "voxtral-mini-latest": {
@@ -1059,16 +1041,19 @@
             "max"
           ]
         }
+      },
+      "zai-glm-5-3-flash": {
+        "reasoning": {
+          "effort": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
       }
     },
     "groq": {
       "allam-2-7b": {
-        "reasoning": false
-      },
-      "groq/compound": {
-        "reasoning": false
-      },
-      "groq/compound-mini": {
         "reasoning": false
       },
       "llama-3.1-8b-instant": {
@@ -1156,6 +1141,24 @@
             "max"
           ]
         }
+      },
+      "kimi-k3.1-pro": {
+        "reasoning": {
+          "effort": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      },
+      "kimi-k3.1-pro-highspeed": {
+        "reasoning": {
+          "effort": [
+            "low",
+            "high",
+            "max"
+          ]
+        }
       }
     },
     "zhipu": {
@@ -1221,6 +1224,7 @@
       },
       "glm-5.2": {
         "reasoning": {
+          "toggle": true,
           "effort": [
             "high",
             "max"
@@ -1341,7 +1345,13 @@
         }
       },
       "glm-5.2": {
-        "reasoning": true
+        "reasoning": {
+          "toggle": true,
+          "effort": [
+            "high",
+            "max"
+          ]
+        }
       },
       "glm-5.3": {
         "reasoning": {
@@ -1371,6 +1381,7 @@
       },
       "kimi-k3": {
         "reasoning": {
+          "toggle": true,
           "effort": [
             "low",
             "high",
@@ -1449,37 +1460,7 @@
       "qwen-vl-plus": {
         "reasoning": false
       },
-      "qwen2-5-14b-instruct": {
-        "reasoning": false
-      },
-      "qwen2-5-32b-instruct": {
-        "reasoning": false
-      },
-      "qwen2-5-72b-instruct": {
-        "reasoning": false
-      },
-      "qwen2-5-7b-instruct": {
-        "reasoning": false
-      },
-      "qwen2-5-coder-32b-instruct": {
-        "reasoning": false
-      },
-      "qwen2-5-coder-7b-instruct": {
-        "reasoning": false
-      },
-      "qwen2-5-math-72b-instruct": {
-        "reasoning": false
-      },
-      "qwen2-5-math-7b-instruct": {
-        "reasoning": false
-      },
       "qwen2-5-omni-7b": {
-        "reasoning": false
-      },
-      "qwen2-5-vl-72b-instruct": {
-        "reasoning": false
-      },
-      "qwen2-5-vl-7b-instruct": {
         "reasoning": false
       },
       "qwen3-14b": {
@@ -1640,9 +1621,6 @@
             "xhigh"
           ]
         }
-      },
-      "qwq-32b": {
-        "reasoning": true
       },
       "qwq-plus": {
         "reasoning": true
